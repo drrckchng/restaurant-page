@@ -1,1 +1,1 @@
-console.log("Test");
+(()=>{"use strict";console.log("Load home page")})();
