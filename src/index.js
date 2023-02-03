@@ -1,1 +1,3 @@
-console.log("Test");
+import loadHomePage from './home.js';
+
+loadHomePage();
