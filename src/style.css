@@ -2,3 +2,15 @@
   background: url('./splash.png');
   background-position: center;
 }
+
+.splash p {
+  color: white;
+}
+
+.splash .title {
+  font-size: 2em; 
+}
+
+.splash .motto {
+  font-size: 1em;
+}
