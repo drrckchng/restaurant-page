@@ -1,3 +1,6 @@
 export default function loadHomePage() {
-  console.log("Load home page");
+  const splash = document.createElement("div");
+  // Title/Banner with motto/saying
+  // We deliver!
+  // Location
 }
