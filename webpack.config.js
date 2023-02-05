@@ -15,6 +15,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
+      template: './src/assets/index.html',
     }),
   ], 
   devtool: 'inline-source-map',
