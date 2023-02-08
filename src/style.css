@@ -14,3 +14,8 @@
 .splash .motto {
   font-size: 1em;
 }
+
+.delivery-icon {
+  width: 120px;
+  aspect-ratio: 1 / 1;
+}
