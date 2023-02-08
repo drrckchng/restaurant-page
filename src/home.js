@@ -19,8 +19,13 @@ export default function loadHomePage() {
 
   content.appendChild(splash);
 
-  // div.classList.add("splash-image");
-  // Title/Banner with motto/saying
-  // We deliver!
+  // Add delivery banner
+  const deliveryBanner = document.createElement("div");
+  deliveryBanner.classList.add("delivery");
+  deliveryBanner.textContent = "We Deliver!";
+  // Add coupang eats and baemin icons
+  content.appendChild(deliveryBanner);
+
   // Location
+  // Add menu (Taco/burrito/quesadillas)
 }
