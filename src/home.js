@@ -41,6 +41,12 @@ export default function loadHomePage() {
 
   content.appendChild(deliveryBanner);
 
-  // Location
+  // Add address
+  const location = document.createElement("div");
+  content.appendChild(location);
+  const address = document.createElement("p");
+  address.textContent = "Seoul Sinsa-dong 663-23"
+  location.appendChild(address);
+
   // Add menu (Taco/burrito/quesadillas)
 }
