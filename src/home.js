@@ -1,5 +1,3 @@
-import SplashImage from './splash.png';
-
 export default function loadHomePage() {
   const content = document.getElementById("content");
 
