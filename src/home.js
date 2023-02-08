@@ -1,3 +1,6 @@
+import Baemin from './baemin.png';
+import Coupang from './coupang-eats.png';
+
 export default function loadHomePage() {
   const content = document.getElementById("content");
 
@@ -23,7 +26,16 @@ export default function loadHomePage() {
   const deliveryBanner = document.createElement("div");
   deliveryBanner.classList.add("delivery");
   deliveryBanner.textContent = "We Deliver!";
-  // Add coupang eats and baemin icons
+
+  // Add delivery app icons
+  const baeminIcon = new Image();
+  const coupangIcon = new Image();
+  baeminIcon.src = Baemin;
+  coupangIcon.src = Coupang;
+
+  deliveryBanner.appendChild(baeminIcon);
+  deliveryBanner.appendChild(coupangIcon);
+
   content.appendChild(deliveryBanner);
 
   // Location
