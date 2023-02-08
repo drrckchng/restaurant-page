@@ -33,6 +33,9 @@ export default function loadHomePage() {
   baeminIcon.src = Baemin;
   coupangIcon.src = Coupang;
 
+  baeminIcon.classList.add("delivery-icon");
+  coupangIcon.classList.add("delivery-icon");
+
   deliveryBanner.appendChild(baeminIcon);
   deliveryBanner.appendChild(coupangIcon);
 
