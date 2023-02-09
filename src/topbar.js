@@ -1,7 +1,7 @@
 import loadHomePage from './home.js';
 // import loadMenuPage from './menu.js';
 // import loadContactPage from './menu.js';
-// import clearPage from './clear.js'
+import clearPage from './clear.js'
 
 export default function loadTopBar() {
   // Grab initial content div
@@ -25,7 +25,7 @@ export default function loadTopBar() {
 
   // Add event listener
   homeButton.addEventListener("click", function() {
-    // clearPage()
+    clearPage()
     loadHomePage();
   });
 
@@ -42,6 +42,8 @@ export default function loadTopBar() {
   topBar.appendChild(homeButton);
   topBar.appendChild(menuButton);
   topBar.appendChild(contactButton);
+
+  topBar.setAttribute("id", "top-bar");
 
   content.appendChild(topBar);
 }
