@@ -6,6 +6,11 @@ import Tacos from './tacos.jpg';
 import Burrito from './burrito.jpg';
 
 export default function loadHomePage() {
+
+  // Load top bar
+  loadTopBar();
+
+  // Grab content div
   const content = document.getElementById("content");
 
   // Add splash banner
