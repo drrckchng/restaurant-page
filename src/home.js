@@ -1,5 +1,8 @@
 import Baemin from './baemin.png';
 import Coupang from './coupang-eats.png';
+import Quesadillas from './quesadilla.jpg';
+import Tacos from './tacos.jpg';
+import Burrito from './burrito.jpg';
 
 export default function loadHomePage() {
   const content = document.getElementById("content");
@@ -49,4 +52,23 @@ export default function loadHomePage() {
   location.appendChild(address);
 
   // Add menu (Taco/burrito/quesadillas)
+  const foodMenu = document.createElement("div");
+
+  const burrito = new Image();
+  const quesadillas = new Image();
+  const tacos = new Image();
+
+  burrito.src = Burrito;
+  quesadillas.src = Quesadillas;
+  tacos.src = Tacos;
+
+  burrito.classList.add("menu-food");
+  quesadillas.classList.add("menu-food");
+  tacos.classList.add("menu-food");
+
+  foodMenu.appendChild(burrito);
+  foodMenu.appendChild(quesadillas);
+  foodMenu.appendChild(tacos);
+
+  content.appendChild(foodMenu);
 }
