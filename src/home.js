@@ -1,3 +1,4 @@
+import loadTopBar from './topbar.js';
 import Baemin from './baemin.png';
 import Coupang from './coupang-eats.png';
 import Quesadillas from './quesadilla.jpg';

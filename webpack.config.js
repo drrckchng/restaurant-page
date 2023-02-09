@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     home: './src/home.js',
+    topbar: './src/topbar.js',
   },
   output: {
     filename: '[name].bundle.js',
