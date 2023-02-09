@@ -1,6 +1,6 @@
 import loadHomePage from './home.js';
-// import loadMenuPage from './menu.js';
-// import loadContactPage from './menu.js';
+import loadMenuPage from './menu.js';
+import loadContactPage from './contact.js';
 import clearPage from './clear.js'
 
 export default function loadTopBar() {
@@ -30,13 +30,13 @@ export default function loadTopBar() {
   });
 
   menuButton.addEventListener("click", function() {
-    // clearPage()
-    // loadMenuPage();
+    clearPage()
+    loadMenuPage();
   });
 
   contactButton.addEventListener("click", function() {
-    // clearPage()
-    // loadContactPage();
+    clearPage()
+    loadContactPage();
   });
 
   topBar.appendChild(homeButton);
