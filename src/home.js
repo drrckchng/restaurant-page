@@ -5,14 +5,10 @@ import Quesadillas from './quesadilla.jpg';
 import Tacos from './tacos.jpg';
 import Burrito from './burrito.jpg';
 
-export default function loadHomePage() {
+// Grab content div
+const content = document.getElementById("content");
 
-  // Load top bar
-  loadTopBar();
-
-  // Grab content div
-  const content = document.getElementById("content");
-
+function addSplashBanner() {
   // Add splash banner
   const splash = document.createElement("div");
   splash.classList.add("splash");
@@ -29,8 +25,15 @@ export default function loadHomePage() {
   motto.classList.add("motto");
   splash.appendChild(motto);
 
-  content.appendChild(splash);
+  // Add address
+  const address = document.createElement("p");
+  address.textContent = "Seoul Sinsa-dong 663-23"
+  splash.appendChild(address);
 
+  content.appendChild(splash);
+}
+
+function addDeliveryBanner() {
   // Add delivery banner
   const deliveryBanner = document.createElement("div");
   deliveryBanner.classList.add("delivery");
@@ -49,14 +52,9 @@ export default function loadHomePage() {
   deliveryBanner.appendChild(coupangIcon);
 
   content.appendChild(deliveryBanner);
+}
 
-  // Add address
-  const location = document.createElement("div");
-  content.appendChild(location);
-  const address = document.createElement("p");
-  address.textContent = "Seoul Sinsa-dong 663-23"
-  location.appendChild(address);
-
+function addFoodMenu() {
   // Add menu (Taco/burrito/quesadillas)
   const foodMenu = document.createElement("div");
 
@@ -77,4 +75,13 @@ export default function loadHomePage() {
   foodMenu.appendChild(tacos);
 
   content.appendChild(foodMenu);
+}
+
+
+export default function loadHomePage() {
+
+  loadTopBar();
+  addSplashBanner();
+  addDeliveryBanner();
+  addFoodMenu();
 }
