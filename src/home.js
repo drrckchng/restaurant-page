@@ -1,9 +1,9 @@
 import loadTopBar from './topbar.js';
-import Baemin from './baemin.png';
-import Coupang from './coupang-eats.png';
-import Quesadillas from './quesadilla.jpg';
-import Tacos from './tacos.jpg';
-import Burrito from './burrito.jpg';
+import Baemin from './pictures/baemin.png';
+import Coupang from './pictures/coupang-eats.png';
+import Tacos from './pictures/tacos.jpg';
+import Burrito from './pictures/burrito.jpg';
+import Quesadillas from './pictures/quesadilla.jpg';
 
 // Grab content div
 const content = document.getElementById("content");
@@ -58,21 +58,21 @@ function addFoodMenu() {
   // Add menu (Taco/burrito/quesadillas)
   const foodMenu = document.createElement("div");
 
+  const tacos = new Image();
   const burrito = new Image();
   const quesadillas = new Image();
-  const tacos = new Image();
 
+  tacos.src = Tacos;
   burrito.src = Burrito;
   quesadillas.src = Quesadillas;
-  tacos.src = Tacos;
 
+  tacos.classList.add("menu-food");
   burrito.classList.add("menu-food");
   quesadillas.classList.add("menu-food");
-  tacos.classList.add("menu-food");
 
+  foodMenu.appendChild(tacos);
   foodMenu.appendChild(burrito);
   foodMenu.appendChild(quesadillas);
-  foodMenu.appendChild(tacos);
 
   content.appendChild(foodMenu);
 }
