@@ -5,7 +5,7 @@ const content = document.getElementById("content");
 
 function addPhoneNumber() {
   const phoneNumbers = document.createElement("div");
-  phoneNumbers.classList.add("contact-phone");
+  phoneNumbers.classList.add("contact", "phone");
   const header = document.createElement("h1");
   header.textContent = "Phone";
   phoneNumbers.appendChild(header);
@@ -17,7 +17,7 @@ function addPhoneNumber() {
 
 function addSocialMedia() {
   const socials = document.createElement("div");
-  socials.classList.add("contact-socials");
+  socials.classList.add("contact", "social");
   const header = document.createElement("h1");
   header.textContent = "Social Media";
   socials.appendChild(header);
@@ -29,6 +29,7 @@ function addSocialMedia() {
 
 function addLocation() {
   const location = document.createElement("div");
+  location.classList.add("contact", "location");
   const header = document.createElement("h1");
   header.textContent = "Location";
   location.appendChild(header);
