@@ -11,7 +11,7 @@ const content = document.getElementById("content");
 function createSection(headerName, className) {
   const div = document.createElement("div");
   div.classList.add("section", className);
-  const header = document.createElement("p");
+  const header = document.createElement("h1");
   header.textContent = headerName;
   div.appendChild(header);
   content.appendChild(div);
