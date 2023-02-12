@@ -1,4 +1,3 @@
-import loadTopBar from './topbar.js';
 import Baemin from './pictures/baemin.png';
 import Coupang from './pictures/coupang-eats.png';
 import Tacos from './pictures/tacos.jpg';
@@ -77,9 +76,7 @@ function addFoodMenu() {
   content.appendChild(foodMenu);
 }
 
-
 export default function loadHomePage() {
-  loadTopBar();
   addSplashBanner();
   addDeliveryBanner();
   addFoodMenu();

@@ -1,4 +1,3 @@
-import loadTopBar from './topbar.js';
 import Tacos from './pictures/tacos.jpg';
 import Burrito from './pictures/burrito.jpg';
 import Quesadillas from './pictures/quesadilla.jpg';
@@ -59,7 +58,6 @@ function addDrinks() {
 }
 
 export default function loadMenuPage() {
-  loadTopBar();
   addFoods();
   addDrinks();
 }

@@ -1,5 +1,3 @@
-import loadTopBar from './topbar.js';
-
 // Grab content div
 const content = document.getElementById("content");
 
@@ -40,7 +38,6 @@ function addLocation() {
 }
 
 export default function loadContactPage() {
-  loadTopBar();
   addPhoneNumber();
   addSocialMedia();
   addLocation();
