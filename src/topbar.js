@@ -5,7 +5,10 @@ import clearPage from './clear.js'
 
 export default function loadTopBar() {
   // Grab initial content div
-  const content = document.getElementById("content");
+  // const content = document.getElementById("content");
+  
+  // Grab body
+  const body = document.body;
 
   // Create top bar that is static
   const topBar = document.createElement("div");
@@ -50,5 +53,5 @@ export default function loadTopBar() {
 
   topBar.setAttribute("id", "top-bar");
 
-  content.appendChild(topBar);
+  body.prepend(topBar);
 }
