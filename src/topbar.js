@@ -14,8 +14,11 @@ export default function loadTopBar() {
   const logo = document.createElement("p");
   logo.textContent = "Almamigo";
   topBar.appendChild(logo);
+
+  // Create button div
+  const buttonDiv = document.createElement("div");
   
-  // Create menu bars
+  // Create buttons
   const homeButton = document.createElement("button");
   homeButton.textContent = "Home";
   const menuButton = document.createElement("button");
@@ -39,9 +42,11 @@ export default function loadTopBar() {
     loadContactPage();
   });
 
-  topBar.appendChild(homeButton);
-  topBar.appendChild(menuButton);
-  topBar.appendChild(contactButton);
+  buttonDiv.appendChild(homeButton);
+  buttonDiv.appendChild(menuButton);
+  buttonDiv.appendChild(contactButton);
+
+  topBar.appendChild(buttonDiv);
 
   topBar.setAttribute("id", "top-bar");
 
