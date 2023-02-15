@@ -87,6 +87,6 @@ function addFoodMenu() {
 
 export default function loadHomePage() {
   addSplashBanner();
-  addDeliveryBanner();
   addFoodMenu();
+  addDeliveryBanner();
 }
