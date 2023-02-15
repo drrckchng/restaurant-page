@@ -32,6 +32,18 @@ body {
 
 #top-bar div button {
   width: 100px;
+  background: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: large;
+}
+
+#top-bar div button:hover {
+  background: green;
+  border: none;
+  cursor: pointer;
 }
 
 .splash {
