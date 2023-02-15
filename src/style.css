@@ -92,9 +92,15 @@ body {
   align-items: center;
 }
 
+.delivery h1 {
+  letter-spacing: 0.1em;
+}
+
 .delivery-icon {
   width: 120px;
   aspect-ratio: 1 / 1;
+  border-radius: 25px;
+  margin: 25px;
 }
 
 .menu-food {
