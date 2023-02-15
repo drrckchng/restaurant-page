@@ -36,7 +36,11 @@ function addDeliveryBanner() {
   // Add delivery banner
   const deliveryBanner = document.createElement("div");
   deliveryBanner.classList.add("delivery");
-  deliveryBanner.textContent = "We Deliver!";
+
+  const deliveryText = document.createElement("p");
+  deliveryText.textContent = "We Deliver!";
+
+  deliveryBanner.appendChild(deliveryText);
 
   // Add delivery app icons
   const baeminIcon = new Image();
@@ -47,8 +51,13 @@ function addDeliveryBanner() {
   baeminIcon.classList.add("delivery-icon");
   coupangIcon.classList.add("delivery-icon");
 
-  deliveryBanner.appendChild(baeminIcon);
-  deliveryBanner.appendChild(coupangIcon);
+  const deliveryIconDiv = document.createElement("div");
+  deliveryIconDiv.classList.add("delivery-icons");
+
+  deliveryIconDiv.appendChild(baeminIcon);
+  deliveryIconDiv.appendChild(coupangIcon);
+
+  deliveryBanner.appendChild(deliveryIconDiv);
 
   content.appendChild(deliveryBanner);
 }
