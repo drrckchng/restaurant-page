@@ -20,7 +20,7 @@ function addSplashBanner() {
 
   // Add restaurant motto
   const motto = document.createElement("p");
-  motto.textContent = "LA Soul in Seoul";
+  motto.textContent = "Seoul Mate";
   motto.classList.add("motto");
   splash.appendChild(motto);
 
