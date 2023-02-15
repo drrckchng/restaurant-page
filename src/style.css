@@ -13,16 +13,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
   padding: 0px 10px 0px 10px;
   height: 15vh;
 }
 
 #top-bar p {
-  font-size: x-large;
+  font-size: 2.4em;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  text-shadow: 4px 4px red;
 }
 
 #top-bar div {
