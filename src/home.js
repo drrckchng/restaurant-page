@@ -38,7 +38,7 @@ function addDeliveryBanner() {
   deliveryBanner.classList.add("delivery");
 
   const deliveryText = document.createElement("h1");
-  deliveryText.textContent = "We Deliver!";
+  deliveryText.textContent = "Delivery";
 
   deliveryBanner.appendChild(deliveryText);
 
