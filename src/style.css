@@ -57,6 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background: url('./pictures/splash.jpg');
   background-position: 50% 50%;
   width: 100%;
@@ -68,16 +69,16 @@ body {
 }
 
 .splash .title {
-  font-size: 2em; 
+  font-size: 2.3em; 
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 900;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .splash .motto {
   font-size: 1em;
-  word-spacing: 0.3em;
+  word-spacing: 0.2em;
   letter-spacing: 0.1em;
 }
 
