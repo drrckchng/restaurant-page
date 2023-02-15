@@ -86,6 +86,10 @@ body {
   font-style: italic;
 }
 
+.delivery {
+  display: flex;
+}
+
 .delivery-icon {
   width: 120px;
   aspect-ratio: 1 / 1;
