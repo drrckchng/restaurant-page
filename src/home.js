@@ -18,11 +18,11 @@ function addSplashBanner() {
   restaurantName.classList.add("title");
   splash.appendChild(restaurantName);
 
-  // Add restaurant motto
-  const motto = document.createElement("p");
-  motto.textContent = "Seoul Mate";
-  motto.classList.add("motto");
-  splash.appendChild(motto);
+  // Add restaurant hours
+  const hours = document.createElement("p");
+  hours.textContent = "Seoul Mate";
+  hours.classList.add("hours");
+  splash.appendChild(hours);
 
   // Add address
   const address = document.createElement("p");
