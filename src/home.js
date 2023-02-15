@@ -65,6 +65,7 @@ function addDeliveryBanner() {
 function addFoodMenu() {
   // Add menu (Taco/burrito/quesadillas)
   const foodMenu = document.createElement("div");
+  foodMenu.classList.add("food-preview");
 
   const tacos = new Image();
   const burrito = new Image();
