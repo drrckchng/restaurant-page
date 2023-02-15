@@ -9,7 +9,7 @@ const content = document.getElementById("content");
 
 function createSection(headerName, className) {
   const div = document.createElement("div");
-  div.classList.add("section", className);
+  div.classList.add("menu-section", className);
   const header = document.createElement("h1");
   header.textContent = headerName;
   div.appendChild(header);
