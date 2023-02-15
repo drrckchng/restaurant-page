@@ -78,9 +78,10 @@ body {
 }
 
 .splash .hours {
-  font-size: 1em;
+  font-size: 0.8em;
   word-spacing: 0.2em;
   letter-spacing: 0.1em;
+  font-weight: 900;
 }
 
 .splash p:nth-child(3) {
@@ -95,6 +96,7 @@ body {
 .menu-food {
   width: 150px;
   aspect-ratio: 1 / 1;
+  margin: 10px 10px;
 }
 
 .delivery {
