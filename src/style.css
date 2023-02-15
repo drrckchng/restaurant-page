@@ -14,6 +14,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: red;
+  padding: 0px 10px 0px 10px;
+  height: 15vh;
 }
 
 #top-bar p {
@@ -21,6 +23,15 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+#top-bar div {
+  height: 100%;
+  display: flex;
+}
+
+#top-bar div button {
+  width: 100px;
 }
 
 .splash {
