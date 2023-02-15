@@ -120,3 +120,14 @@ body {
   width: 200px;
   aspect-ratio: 1 / 1;
 }
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-section .items {
+  display: flex;
+}
