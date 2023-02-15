@@ -19,6 +19,8 @@ body {
 #top-bar p {
   font-size: x-large;
   font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .splash {
