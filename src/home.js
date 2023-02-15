@@ -20,7 +20,7 @@ function addSplashBanner() {
 
   // Add restaurant hours
   const hours = document.createElement("p");
-  hours.textContent = "Seoul Mate";
+  hours.textContent = "Mon-Sat 6pm-2am";
   hours.classList.add("hours");
   splash.appendChild(hours);
 
