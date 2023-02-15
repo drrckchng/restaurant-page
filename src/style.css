@@ -41,9 +41,14 @@ body {
 }
 
 #top-bar div button:hover {
-  background: green;
+  background: #1e1e1e;
   border: none;
   cursor: pointer;
+  -webkit-transition: background 200ms ease-out;
+  -moz-transition: background 200ms ease-out;
+  -o-transition: background 200ms ease-out;
+  -ms-transition: background 200ms ease-out;
+  transition: background 200ms ease-out;
 }
 
 .splash {
