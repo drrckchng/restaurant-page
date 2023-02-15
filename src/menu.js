@@ -38,9 +38,14 @@ function addFoods() {
   burritoPicture.src = Burrito;
   quesadillasPicture.src = Quesadillas;
 
-  createFoodAndDrink(foodSection, tacoPicture, "Pollo, Carnitas, Barbacoa, Tripas", "tacos");
-  createFoodAndDrink(foodSection, burritoPicture, "Pollo, Carnitas, Barbacoa", "burritos");
-  createFoodAndDrink(foodSection, quesadillasPicture, "Pollo, Carnitas, Barbacoa", "quesadillas");
+  const foodDiv = document.createElement("div");
+  foodDiv.classList.add("items");
+
+  createFoodAndDrink(foodDiv, tacoPicture, "Pollo, Carnitas, Barbacoa, Tripas", "tacos");
+  createFoodAndDrink(foodDiv, burritoPicture, "Pollo, Carnitas, Barbacoa", "burritos");
+  createFoodAndDrink(foodDiv, quesadillasPicture, "Pollo, Carnitas, Barbacoa", "quesadillas");
+
+  foodSection.appendChild(foodDiv);
 }
 
 function addDrinks() {
@@ -52,9 +57,14 @@ function addDrinks() {
 
   jarritosPicture.src = Jarritos;
   horchataPicture.src = Horchata;
+  
+  const drinkDiv = document.createElement("div");
+  drinkDiv.classList.add("items");
 
-  createFoodAndDrink(drinkSection, jarritosPicture, "Traditional Mexican soda");
-  createFoodAndDrink(drinkSection, horchataPicture, "Traditional Mexican drink");
+  createFoodAndDrink(drinkDiv, jarritosPicture, "Traditional Mexican soda");
+  createFoodAndDrink(drinkDiv, horchataPicture, "Traditional Mexican drink");
+
+  drinkSection.appendChild(drinkDiv);
 }
 
 export default function loadMenuPage() {
